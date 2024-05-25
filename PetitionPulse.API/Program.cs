@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ServiceConfiguration();
 builder.Services.RepositoryConfiguration();
 builder.Services.AutoMapperConfiguration();
-builder.Services.ContextConfiguration(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.ContextConfiguration(builder.Configuration.GetConnectionString("DefaultConnectionString"));
 
 
 var app = builder.Build();

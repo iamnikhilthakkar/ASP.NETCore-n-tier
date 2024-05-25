@@ -16,11 +16,12 @@ namespace PetitionPulse.Repository.Entities
 
         }
         public DbSet<Topic> Topics { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            SeedTopic(modelBuilder);
+            //SeedTopic(modelBuilder);
         }
 
         public void SeedTopic(ModelBuilder modelBuilder)
