@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PetitionPulse.Core\PetitionPulse.Core.csproj" />
   </ItemGroup>
 
