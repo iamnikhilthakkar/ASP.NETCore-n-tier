@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
+using PetitionPulse.Core.Model.Account;
 using PetitionPulse.Service.Services.Account;
 
 namespace PetitionPulse.API.Controllers
@@ -13,9 +14,10 @@ namespace PetitionPulse.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register()
+        public async Task<IActionResult> Register(RegisterUserRequest request)
         {
-            return Ok();
+            var response = await _accountService.Register(request);
+            return Ok(response);
         }
     }
 }

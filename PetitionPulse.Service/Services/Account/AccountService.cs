@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 
+using PetitionPulse.Core.Model.Account;
+using PetitionPulse.Core.Model.Common;
 using PetitionPulse.Repository.Repositories.Account;
 
 using System;
@@ -21,6 +23,9 @@ namespace PetitionPulse.Service.Services.Account
             _mapper = mapper;
         }
 
-
+        public async Task<BaseResponse> Register(RegisterUserRequest request)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
